@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Colton Barger | Colton</title>
+    <title>Rotten Tomatoes Reviews Sentiment Analysis | Colton</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="currently works as a Brand Protection Specialist, helping stop trademark infringements and counterfeit products. He is an aspiring data analyst/scientist who is highly skilled with Python, SQL, Tableau, and Excel">
+    <meta name="description" content="Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done.">
     <meta name="generator" content="Hugo 0.93.3" />
     
     
@@ -29,20 +29,20 @@
 
     
     
-      <link href="https://www.cbarger.com/index.xml" rel="alternate" type="application/rss+xml" title="Colton" />
-      <link href="https://www.cbarger.com/index.xml" rel="feed" type="application/rss+xml" title="Colton" />
-      
-    
-    
-    <meta property="og:title" content="Colton Barger" />
-<meta property="og:description" content="currently works as a Brand Protection Specialist, helping stop trademark infringements and counterfeit products. He is an aspiring data analyst/scientist who is highly skilled with Python, SQL, Tableau, and Excel" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cbarger.com/" /><meta property="og:site_name" content="Colton" />
+    <meta property="og:title" content="Rotten Tomatoes Reviews Sentiment Analysis" />
+<meta property="og:description" content="Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.cbarger.com/post/rotten-tomatoes-sentiment/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-11-17T11:13:32-04:00" />
+<meta property="article:modified_time" content="2021-11-17T11:13:32-04:00" /><meta property="og:site_name" content="Colton" />
 
-<meta itemprop="name" content="Colton Barger">
-<meta itemprop="description" content="currently works as a Brand Protection Specialist, helping stop trademark infringements and counterfeit products. He is an aspiring data analyst/scientist who is highly skilled with Python, SQL, Tableau, and Excel"><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Colton Barger"/>
-<meta name="twitter:description" content="currently works as a Brand Protection Specialist, helping stop trademark infringements and counterfeit products. He is an aspiring data analyst/scientist who is highly skilled with Python, SQL, Tableau, and Excel"/>
+<meta itemprop="name" content="Rotten Tomatoes Reviews Sentiment Analysis">
+<meta itemprop="description" content="Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done."><meta itemprop="datePublished" content="2021-11-17T11:13:32-04:00" />
+<meta itemprop="dateModified" content="2021-11-17T11:13:32-04:00" />
+<meta itemprop="wordCount" content="180">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rotten Tomatoes Reviews Sentiment Analysis"/>
+<meta name="twitter:description" content="Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done."/>
 
 	
   </head>
@@ -50,10 +50,12 @@
   <body class="ma0 avenir bg-near-white">
 
     
+   
+  
 
   
   
-  <header class="cover bg-top" style="background-image: url('https://www.cbarger.com/images/isaac-smith-unsplash.jpg');">
+  <header class="cover bg-top" style="background-image: url('https://www.cbarger.com/images/rottentomatoes_logo.png');">
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -126,153 +128,58 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Colton Barger
-        </h1>
+      <div class="tc-l pv6 ph3 ph4-ns">
         
-          <h2 class="fw1 f5 f3-l white-80 measure-wide-l center mt3">
-            currently works as a Brand Protection Specialist, helping stop trademark infringements and counterfeit products. He is an aspiring data analyst/scientist who is highly skilled with Python, SQL, Tableau, and Excel
-          </h2>
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Rotten Tomatoes Reviews Sentiment Analysis</h1>
+          
         
       </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
- <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-    
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked">
+          
+        PROJECTS
+      </aside>
+      
+      <h1 class="f1 athelas mt3 mb1">Rotten Tomatoes Reviews Sentiment Analysis</h1>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2021-11-17T11:13:32-04:00">November 17, 2021</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="summary">Summary</h2>
+<p>In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of <em>Interstellar (2014)</em>). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done.</p>
+<p>Upon further analysis of how to properly examine the effectiveness of a machine learning model, I have concluded that this project does not perform very well. Sure, 89% accuracy sounds pretty darn good, but consider this: In total I scraped 16,397 reviews from Rotten Tomatoes. Of these, 15,024 were positive reviews. If we had a model that, say, only predicted that reviews were positive no matter what, then that said model would perform with 91.6% accuracy. As I write this on March 13, 2022 I plan on re-training some models to see if I can improve past ~93% accuracy.</p>
+<p><a href="https://github.com/cbarger233/Rotten-Tomatoes-Web-Scraper-and-Sentiment-Analysis" title="Go to this link!">GitHub Repository For This Project</a></p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
   </article>
-  
-  
-  
-  
-  
-  
-  
-    
-    
-
-    <div class="pa3 pa4-ns w-100 w-70-ns center">
-      
-       
-          <h1 class="flex-none">
-            Recent Projects
-          </h1>
-        
-
-      
-
-      <section class="w-100 mw8">
-        
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="https://www.cbarger.com/post/g2g-scraping/" class="db grow">
-            <img src="https://www.cbarger.com/images/listings-by-seller.PNG" class="img" alt="image from Scraping Lost Ark Gold Prices off of g2g.com">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://www.cbarger.com/post/g2g-scraping/" class="color-inherit dim link">
-            Scraping Lost Ark Gold Prices off of g2g.com
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Summary In this project I develop a web scraper using python, selenium, and BeautifulSoup4 to collect data on gold prices for the MMORPG Lost Ark and display it in an online dashboard. The dashboard is compiled using plotly and dash, and then deployed to Heroku.
-GitHub Repository For This Project
-View the Dashboard For This Project
-Features  Scrapes paginated data across 62 servers and 5 regions Displays the time series of gold prices in an interactive graph using dropdown bars Displays the time series of gold prices for every gold seller of Lost Ark  
-        </div>
-          <a href="https://www.cbarger.com/post/g2g-scraping/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="https://www.cbarger.com/post/rotten-tomatoes-sentiment/" class="db grow">
-            <img src="https://www.cbarger.com/images/rottentomatoes_logo.png" class="img" alt="image from Rotten Tomatoes Reviews Sentiment Analysis">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://www.cbarger.com/post/rotten-tomatoes-sentiment/" class="color-inherit dim link">
-            Rotten Tomatoes Reviews Sentiment Analysis
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done.
-        </div>
-          <a href="https://www.cbarger.com/post/rotten-tomatoes-sentiment/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-          <div class="relative w-100 mb4">
-            
-<article class="bb b--black-10">
-  <div class="db pv4 ph3 ph0-l no-underline dark-gray">
-    <div class="flex flex-column flex-row-ns">
-      
-          
-        
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
-          <a href="https://www.cbarger.com/post/chess-game-analysis/" class="db grow">
-            <img src="https://www.cbarger.com/images/listings-by-seller.PNG" class="img" alt="image from Analysis of a Chess Games Dataset from Kaggle">
-          </a>
-        </div>
-      
-      <div class="blah w-100 w-60-ns pl3-ns">
-        <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="https://www.cbarger.com/post/chess-game-analysis/" class="color-inherit dim link">
-            Analysis of a Chess Games Dataset from Kaggle
-            </a>
-        </h1>
-        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here
-        </div>
-          <a href="https://www.cbarger.com/post/chess-game-analysis/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
-        
-      </div>
-    </div>
-  </div>
-</article>
-
-          </div>
-        
-      </section>
-
-      
-
-      </div>
-  
 
     </main>
     <footer class="bg-light-purple bottom-0 w-100 pa3" role="contentinfo">
