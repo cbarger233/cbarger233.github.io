@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Colton Barger on Colton</title>
-    <link>https://www.cbarger.com/</link>
-    <description>Recent content in Colton Barger on Colton</description>
+    <title>Projects on Colton</title>
+    <link>https://www.cbarger.com/projects/</link>
+    <description>Recent content in Projects on Colton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 02 Apr 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://www.cbarger.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://www.cbarger.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analysis of a Chess Games Dataset</title>
       <link>https://www.cbarger.com/projects/chess-game-analysis/</link>
@@ -45,27 +45,6 @@ Features  Scrapes paginated data across 62 servers and 5 regions Displays the ti
       
       <guid>https://www.cbarger.com/projects/rotten-tomatoes-sentiment/</guid>
       <description>Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://www.cbarger.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cbarger.com/about/</guid>
-      <description>Hi, my name is Colton. I&amp;rsquo;m a person with many hobbies, some of which may not make sense to mix together. First and foremost, I love to learn. I received a bachelor&amp;rsquo;s degree in Physics from Penn State Behrend, a branch campus of Penn State, in 2019. Afterwards, I moved on to study applied mathematics at Bowling Green State University and graduated with a master&amp;rsquo;s degree in 2021. I keep my brain in check by taking random courses on Coursera (and sometimes finishing them), and doing analysis on datasets in my spare time.</description>
-    </item>
-    
-    <item>
-      <title>Contact Me</title>
-      <link>https://www.cbarger.com/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.cbarger.com/contact/</guid>
-      <description>Feel free to contact me about anything: critiques, recruitment opportunities, invitations for friendship, etc.
-Email: cbarger233@gmail.com
-LinkedIn
-GitHub</description>
     </item>
     
   </channel>
