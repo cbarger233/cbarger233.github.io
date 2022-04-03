@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Analysis of a Chess Games Dataset from Kaggle | Colton</title>
+    <title>Analysis of a Chess Games Dataset | Colton</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here">
+    <meta name="description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here. There are over 20,000 games from 12,000&#43; players on lichess.org found in the dataset with which I try to answer questions such as
+ How big of an advantage do players with the white pieces have, if any? How does rating affect the outcome of a game? Are there any players in the dataset with a suspiciously high winning rate?">
     <meta name="generator" content="Hugo 0.93.3" />
     
     
@@ -29,20 +30,23 @@
 
     
     
-    <meta property="og:title" content="Analysis of a Chess Games Dataset from Kaggle" />
-<meta property="og:description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here" />
+    <meta property="og:title" content="Analysis of a Chess Games Dataset" />
+<meta property="og:description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here. There are over 20,000 games from 12,000&#43; players on lichess.org found in the dataset with which I try to answer questions such as
+ How big of an advantage do players with the white pieces have, if any? How does rating affect the outcome of a game? Are there any players in the dataset with a suspiciously high winning rate?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cbarger.com/post/chess-game-analysis/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-10-25T10:58:08-04:00" />
-<meta property="article:modified_time" content="2021-10-25T10:58:08-04:00" /><meta property="og:site_name" content="Colton" />
+<meta property="article:published_time" content="2022-04-02T10:58:08-04:00" />
+<meta property="article:modified_time" content="2022-04-02T10:58:08-04:00" /><meta property="og:site_name" content="Colton" />
 
-<meta itemprop="name" content="Analysis of a Chess Games Dataset from Kaggle">
-<meta itemprop="description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here"><meta itemprop="datePublished" content="2021-10-25T10:58:08-04:00" />
-<meta itemprop="dateModified" content="2021-10-25T10:58:08-04:00" />
-<meta itemprop="wordCount" content="20">
+<meta itemprop="name" content="Analysis of a Chess Games Dataset">
+<meta itemprop="description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here. There are over 20,000 games from 12,000&#43; players on lichess.org found in the dataset with which I try to answer questions such as
+ How big of an advantage do players with the white pieces have, if any? How does rating affect the outcome of a game? Are there any players in the dataset with a suspiciously high winning rate?"><meta itemprop="datePublished" content="2022-04-02T10:58:08-04:00" />
+<meta itemprop="dateModified" content="2022-04-02T10:58:08-04:00" />
+<meta itemprop="wordCount" content="1537">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Analysis of a Chess Games Dataset from Kaggle"/>
-<meta name="twitter:description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here"/>
+<meta name="twitter:title" content="Analysis of a Chess Games Dataset"/>
+<meta name="twitter:description" content="Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here. There are over 20,000 games from 12,000&#43; players on lichess.org found in the dataset with which I try to answer questions such as
+ How big of an advantage do players with the white pieces have, if any? How does rating affect the outcome of a game? Are there any players in the dataset with a suspiciously high winning rate?"/>
 
 	
   </head>
@@ -55,7 +59,7 @@
 
   
   
-  <header class="cover bg-top" style="background-image: url('https://www.cbarger.com/images/listings-by-seller.PNG');">
+  <header class="cover bg-top" style="background-image: url('https://www.cbarger.com/images/chess-banner.jpg');">
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
@@ -130,7 +134,7 @@
 
       <div class="tc-l pv6 ph3 ph4-ns">
         
-          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Analysis of a Chess Games Dataset from Kaggle</h1>
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Analysis of a Chess Games Dataset</h1>
           
         
       </div>
@@ -149,18 +153,63 @@
         PROJECTS
       </aside>
       
-      <h1 class="f1 athelas mt3 mb1">Analysis of a Chess Games Dataset from Kaggle</h1>
+      <h1 class="f1 athelas mt3 mb1">Analysis of a Chess Games Dataset</h1>
       
       
       
-      <time class="f6 mv4 dib tracked" datetime="2021-10-25T10:58:08-04:00">October 25, 2021</time>
+      <time class="f6 mv4 dib tracked" datetime="2022-04-02T10:58:08-04:00">April 2, 2022</time>
       
 
       
       
     </header>
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h2 id="summary">Summary</h2>
-<p>I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found <a href="https://www.kaggle.com/mysarahmadbhat/online-chess-games" title="Feast your eyes on this">here</a></p>
+<p>I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found <a href="https://www.kaggle.com/mysarahmadbhat/online-chess-games" title="Feast your eyes on this">here</a>. There are over 20,000 games from 12,000+ players on lichess.org found in the dataset with which I try to answer questions such as</p>
+<ul>
+<li>How big of an advantage do players with the white pieces have, if any?</li>
+<li>How does rating affect the outcome of a game?</li>
+<li>Are there any players in the dataset with a suspiciously high winning rate? Could they be cheating?</li>
+<li>How do the moves of some of these players compare to top chess engine moves?</li>
+</ul>
+<p>I&rsquo;ll skip over some of the minute details, especially the data engineering parts, here; however, the full Jupyter Notebook can be found at my Github <a href="https://github.com/cbarger233/Chess-Game-Analysis/blob/main/chess-games-data-cheater-analysis.ipynb" title="Prepare for a lot of lambda functions if you go here.">at this link</a>.</p>
+<h2 id="popular-opening-moves">Popular Opening Moves</h2>
+<p>First, my goal was to identify which opening moves were the most popular among players, just out of curiosity. Looking into the first moves made in each game we can see the distribution of the most popular moves below.</p>
+<p><img src="https://www.cbarger.com/images/openings_distribution.png" alt="Chess Openings" title="Popularity of opening first moves in the dataset."></p>
+<p>The King&rsquo;s Pawn opening move, in which the player moves the &rsquo;e&rsquo; pawn from e2 to e4, is the most popular with 63% of games having it. The Queen&rsquo;s Pawn, where the players moves a pawn to d4, is second most popular with 22.6% of people making this move.</p>
+<p>Since we are interested in the effect color has on who wins, we might try to see if a specific opening move affects the outcome of the chess games played in this dataset. I took a look at which color piece won for the four most popular openings. Naturally, one might expect that the white pieces, the ones that make the first move, would have a higher chance of winning these games since they have a natural advantage. After all, if white makes no mistakes in chess, every move black does has to be in response to what white does. However, since humans are flawed, it also might be natural to assume this color advantage is wiped clean at some skill levels.</p>
+<p><img src="https://www.cbarger.com/images/color_opening_comparison.png" alt="Some text idk" title="Comparison of white and black victories by popular openings."></p>
+<p>The results are as expected from intuition, with the white pieces winning anywhere from 5%-11% more games than the black pieces. It might be worth noting that the Reti opening appears to have more draws than the other popular openings do. These games only account for 3.6% of the 20,000 games, or ~720 games played. A bigger sample of games would be needed to determine if this opening does indeed have more draws than the others.</p>
+<p>I was also curious about how ELO rating came into the equation with regard to what color wins in chess. I made a filter that would only take into account games in a certain ELO range and have it determine what percentage of games were won by both white and black. As expected, the white pieces were victorious <em>most</em> of the time. For example, if I were to look at games in the dataset where both players are rated below 1100 ELO points, then black players have a slight advantage over white as shown in the pie chart below.</p>
+<p><img src="https://www.cbarger.com/images/rating_advantage_by_color.png" alt="More random text" title="Players below 1100 ELO are slightly worse with the white pieces (But only if we consider the data from these games)!"></p>
+<h2 id="how-often-does-the-higher-rated-player-win">How often does the higher-rated player win?</h2>
+<p>Okay, I&rsquo;ve had enough of pie charts. They&rsquo;re controversial in the data analysis world for a reason, but they were fair to use up to this point.</p>
+<p>Now let us dive into how much of an advantage higher-rated players have over their competitors. It&rsquo;s no secret to any chess player that if someone rated 1200 is playing a Grandmaster (2500 and up), then the Grandmaster is going to win 99.9% of the time, if not more, in a fair match. I don&rsquo;t think it will take much speculation to guess what the results of this analysis are going to be, but it will be fun to see nonetheless.</p>
+<p>To accomplish our goal, I went through all the games (not manually, ha) and quantified the rating gap between the two people playing. These quantities were placed into six arbitrary groups based on the size of the gap in ELO points. The groups were &lsquo;0-50&rsquo; for players of the same rating or within 50 ELO points of each other, &lsquo;51-100&rsquo;, &lsquo;101-150&rsquo;, &lsquo;151-200&rsquo;, &lsquo;201-250&rsquo;, and &lsquo;&gt;250&rsquo;. I then specified whether or not the player with the higher rating won the match or not. Putting all of this information together we get the below graph.</p>
+<p><img src="https://www.cbarger.com/images/win-by-rating-gap.png" alt="ayy" title="The higher the rating gap between two players, the more likely it is that the higher-rated player wins."></p>
+<p>Not surprisingly, the higher-rated players have the advantage in nearly every category. The &lsquo;0-50&rsquo; category shows that the lower-rated players have a miniscule advantage, even with the error bar. This can be due to the fact that players 50 ELO points from one another arguably have the same rating or level of ability in the long run, or our lack of enough data to represent the population as a whole.</p>
+<p>Another interesting comparison to make would be how rating affects the outcome of a game based on the opening move played. A stacked bar graph of the compiled data for this result is shown below.</p>
+<p><img src="https://www.cbarger.com/images/wins_by_opening.png" alt="bloop" title="Of course, players with more skill win more. Who would have known that?"></p>
+<p>Even with draws and losses pooled together, it is still obvious from the figure that stronger players generally win more games. Who would have guessed?</p>
+<h2 id="targeting-suspicious-players">Targeting Suspicious Players</h2>
+<p>A big issue with online chess is in the detection of players cheating during their games. This happens even at the Grandmaster level. So it&rsquo;s no surprise that a lot of time and research has gone into figuring out the characteristics of bad actors who do this.</p>
+<p>In particular, one telling sign that a person may be cheating is that they take the same amount of time to make a move every single time it&rsquo;s their turn. Players who use chess engines to cheat often put their opponents move into the engine, wait for the engine to compute the top move, and then make the engine&rsquo;s top move recommendation. This process takes close to the same amount of time every turn, and it&rsquo;s a dead giveaway that someone is cheating. Unfortunately, I do not have access to that kind of data.</p>
+<p>Another way to catch cheaters is by comparing moves to the top moves recommended by engines. Often times, the top moves recommended by chess engines are inhuman. That is, they look unintuitive enough that a human would never think of making such a move (unless you&rsquo;re a Norwegian super-GM with the initials M.C.). This is what I attempt to do in this project. I do a case study of one suspect player and I look at the moves in their games compared to the top four engine moves made by the chess engine Stockfish 14.</p>
+<p>To identify potential cheaters in this chess dataset, I took a look at the win rate of all players who have played 24 games or more. Below is a capture of the top 10 players who fit this description.</p>
+<p><img src="https://www.cbarger.com/images/top10.PNG" alt="heyo" title="These players made the top 10, let's go."></p>
+<p>All of the players listed above are suspicious. It&rsquo;s improbably to win 90% or more of your online chess games unless you&rsquo;re:</p>
+<ol>
+<li>Playing unrated games with a friend who is worse than you</li>
+<li>A smurf account of a chess master climbing the ratings quickly</li>
+<li>Really lucky</li>
+</ol>
+<p>In particular I want to analyze the user &ldquo;chesscarl&rdquo; since they have played 46 games and won 45 of them. I also looked into chesscarl&rsquo;s opponents and saw they played a different opponent every time.</p>
+<p>Out of curiosity, I looked at the ratings of chesscarl&rsquo;s opponents to see whether or not they were significantly lower than chesscarl. In fact, I found that out of the 46 games chesscarl played, they were the higher rated player in 43 of those games. Another interesting fact is that the average rating gap between chesscarl and these lower-rated players is 355 points. If you recall from earlier, players who have <em>at least</em> 250 rating points on their opponent have a 80% win rate. Chesscarl has an average rating over 100 points higher than the minimum for that category, so I would estimate these players have a 90% win rate or more.</p>
+<p>Next I used a Stockfish engine to compare the moves chesscarl made with those suggested by the engine. The algorithm I devised compares chesscarl&rsquo;s moves to Stockfish&rsquo;s top 4 suggestions. Arguably, I should go with top 2 suggestions since top 4 moves are likely to be made by players of any rating. But I shall stick with 4. Shown below is a histogram of chesscarl&rsquo;s similarity to Stockfish 14.</p>
+<p><img src="https://www.cbarger.com/images/chesscarl-histogram.png" alt="rolly polly" title="Chesscarl's similarity to top 4 engine moves."></p>
+<p>Looking at the histogram, we can see that in each game chesscarl played, at least 60% of their moves were similar to a top 4 engine move in each game, according to Stockfish 14. In two games, although we don&rsquo;t know the length of the games from looking at the histogram, chesscarl matched the top four engine moves 100%.</p>
+<p>Again, since we concluded that chesscarl was just playing against lower-rated players in nearly every game, it&rsquo;s not hard to find top moves in that scenario.</p>
+<h2 id="future-work">Future Work</h2>
+<p>I would like to perform the analysis that I just did on chesscarl on every player in the DataFrame. I have already compiled the data for each player, comparing every single move of theirs to the top 3 moves made by Stockfish; however, I still need to sift through the data and draw conclusions from it. Stay tuned.</p>
 <ul class="pa0">
   
 </ul>

@@ -6,7 +6,17 @@
     <description>Recent content in Colton Barger on Colton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Feb 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://www.cbarger.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Apr 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://www.cbarger.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analysis of a Chess Games Dataset</title>
+      <link>https://www.cbarger.com/post/chess-game-analysis/</link>
+      <pubDate>Sat, 02 Apr 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://www.cbarger.com/post/chess-game-analysis/</guid>
+      <description>Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here. There are over 20,000 games from 12,000+ players on lichess.org found in the dataset with which I try to answer questions such as
+ How big of an advantage do players with the white pieces have, if any? How does rating affect the outcome of a game? Are there any players in the dataset with a suspiciously high winning rate?</description>
+    </item>
+    
     <item>
       <title>Scraping Lost Ark Gold Prices off of g2g.com</title>
       <link>https://www.cbarger.com/post/g2g-scraping/</link>
@@ -26,24 +36,6 @@ Features  Scrapes paginated data across 62 servers and 5 regions Displays the ti
       
       <guid>https://www.cbarger.com/post/rotten-tomatoes-sentiment/</guid>
       <description>Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done.</description>
-    </item>
-    
-    <item>
-      <title>Analysis of a Chess Games Dataset from Kaggle</title>
-      <link>https://www.cbarger.com/post/chess-game-analysis/</link>
-      <pubDate>Mon, 25 Oct 2021 10:58:08 -0400</pubDate>
-      
-      <guid>https://www.cbarger.com/post/chess-game-analysis/</guid>
-      <description>Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here</description>
-    </item>
-    
-    <item>
-      <title>Chapter I: The Grand Hall</title>
-      <link>https://www.cbarger.com/articles/project-1/</link>
-      <pubDate>Sun, 09 Apr 2017 10:58:08 -0400</pubDate>
-      
-      <guid>https://www.cbarger.com/articles/project-1/</guid>
-      <description>Three hundred and forty-eight years, six months, and nineteen days ago</description>
     </item>
     
     <item>
