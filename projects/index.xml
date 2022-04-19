@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://www.cbarger.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>ARIMA models for Time Series Analysis and Forecasting</title>
+      <link>https://www.cbarger.com/projects/arima_modeling/</link>
+      <pubDate>Mon, 18 Apr 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://www.cbarger.com/projects/arima_modeling/</guid>
+      <description>Summary ARIMA models are time series models often used in economics and finance to forecast the future. Here I talk a bit about ARIMA models in general and present an example of forecasting future populations gains of the US using ARIMA in Python.
+The Jupyter notebook in which I perform the following analyses can be found on my GitHub here.
+What is ARIMA, Exactly? ARIMA is an acronym describing a method of combined statistical techniques to model and predict time series data.</description>
+    </item>
+    
+    <item>
       <title>Analysis of a Chess Games Dataset</title>
       <link>https://www.cbarger.com/projects/chess-game-analysis/</link>
       <pubDate>Sat, 02 Apr 2022 10:58:08 -0400</pubDate>
@@ -39,7 +50,7 @@ Features  Scrapes paginated data across 62 servers and 5 regions Displays the ti
     </item>
     
     <item>
-      <title>Rotten Tomatoes Reviews Sentiment Analysis</title>
+      <title>Rotten Tomatoes Reviews NLP and Sentiment Analysis Using LSTM</title>
       <link>https://www.cbarger.com/projects/rotten-tomatoes-sentiment/</link>
       <pubDate>Wed, 17 Nov 2021 11:13:32 -0400</pubDate>
       
