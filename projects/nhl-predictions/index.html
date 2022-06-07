@@ -4,11 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Predicting NHL Game Outcomes with ML and Feature Engineering | Colton</title>
+    <title>Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult | Colton</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Full write-up coming soon.
-Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.
-In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccerlogic.">
+    <meta name="description" content="Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from nhl.com using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.">
     <meta name="generator" content="Hugo 0.93.3" />
     
     
@@ -26,31 +24,27 @@ In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccer
     
     
       
+<link rel="shortcut icon" href="https://www.cbarger.com/images/first-difference.png" type="image/x-icon" />
+
 
     
 
     
     
-    <meta property="og:title" content="Predicting NHL Game Outcomes with ML and Feature Engineering" />
-<meta property="og:description" content="Full write-up coming soon.
-Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.
-In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccerlogic." />
+    <meta property="og:title" content="Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult" />
+<meta property="og:description" content="Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from nhl.com using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://www.cbarger.com/projects/nhl-predictions/" /><meta property="article:section" content="projects" />
 <meta property="article:published_time" content="2022-05-16T10:58:08-04:00" />
 <meta property="article:modified_time" content="2022-05-16T10:58:08-04:00" /><meta property="og:site_name" content="Colton" />
 
-<meta itemprop="name" content="Predicting NHL Game Outcomes with ML and Feature Engineering">
-<meta itemprop="description" content="Full write-up coming soon.
-Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.
-In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccerlogic."><meta itemprop="datePublished" content="2022-05-16T10:58:08-04:00" />
+<meta itemprop="name" content="Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult">
+<meta itemprop="description" content="Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from nhl.com using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game."><meta itemprop="datePublished" content="2022-05-16T10:58:08-04:00" />
 <meta itemprop="dateModified" content="2022-05-16T10:58:08-04:00" />
-<meta itemprop="wordCount" content="128">
+<meta itemprop="wordCount" content="1440">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Predicting NHL Game Outcomes with ML and Feature Engineering"/>
-<meta name="twitter:description" content="Full write-up coming soon.
-Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.
-In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccerlogic."/>
+<meta name="twitter:title" content="Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult"/>
+<meta name="twitter:description" content="Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from nhl.com using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game."/>
 
 	
   </head>
@@ -150,7 +144,7 @@ In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccer
 
       <div class="tc-l pv6 ph3 ph4-ns">
         
-          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Predicting NHL Game Outcomes with ML and Feature Engineering</h1>
+          <h1 class="f2 f1-l fw2 white-90 mb0 lh-title">Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult</h1>
           
         
       </div>
@@ -169,7 +163,15 @@ In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccer
         PROJECTS
       </aside>
       
-      <h1 class="f1 athelas mt3 mb1">Predicting NHL Game Outcomes with ML and Feature Engineering</h1>
+      <h1 class="f1 athelas mt3 mb1">Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult</h1>
+      
+      <p class="tracked">
+          By <strong>
+          
+              Colton Barger
+          
+          </strong>
+      </p>
       
       
       
@@ -179,10 +181,204 @@ In literature an accuracy of 61.54% was achieved by Gianni Pischedda from soccer
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Full write-up coming soon.</p>
-<p>Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.</p>
-<p>In literature an accuracy of 61.54% was achieved by Gianni Pischedda from <a href="https://soccerlogic.com/" title="Hmmmm">soccerlogic.com</a> using ClusteR, a software developed for sports analysis. Those results can be read about <a href="https://www.researchgate.net/publication/284457066_Predicting_NHL_Match_Outcomes_with_ML_Models" title="Let's go there.">here</a>. In my analysis I use three different common ML models: logistic regression, random forest classification, and Linear SVM. The best results thus far have been achieved using logistic regression with an accuracy of 57.3%.</p>
-<p>More to come in the next week.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from <a href="https://www.nhl.com/stats/teams?aggregate=0&amp;reportType=game&amp;seasonFrom=20052006&amp;seasonTo=20202021&amp;dateFromSeason&amp;gameType=2&amp;filter=gamesPlayed,gte,1&amp;sort=a_gameDate&amp;page=0&amp;pageSize=100">nhl.com</a> using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.</p>
+<p>As a baseline for my results, the home team won 8249 out of 16843 games during the time period my data is from. So if someone were to predict that the home team wins every game in the dataset, they would have an accuracy of 48.98%. My best model reaches an accuracy of 57.39%.</p>
+<h2 id="previous-findings">Previous Findings</h2>
+<p>In literature an accuracy of 61.54% was achieved by Gianni Pischedda from <a href="https://soccerlogic.com/" title="Hmmmm">soccerlogic.com</a> using ClusteR, a software developed for sports analysis. Those results can be read about <a href="https://www.researchgate.net/publication/284457066_Predicting_NHL_Match_Outcomes_with_ML_Models" title="Let's go there.">here</a>.</p>
+<p>In a similar project GitHub user <a href="https://github.com/kn-kn" title="Link to Kevin's GitHub">kn-kn</a> was able to predict NHL game outcomes with anywhere from 53%-58% accuracy using decision trees and random forests and varying types of data attribute combinations.</p>
+<p>In my analysis I use three different common ML models: logistic regression, random forest classification, and linear SVM. The best results thus far have been achieved using logistic regression with an accuracy of 57.3%.</p>
+<h2 id="cleaning-data-and-making-features">Cleaning Data and Making Features</h2>
+<p>Below is the DataFrame I was to be working with, after reading in the data to Python and an initial bit of data cleaning:</p>
+<p><img src="https://www.cbarger.com/images/nhl_initial_data.PNG" alt="Initial DataFrame" title="The first five rows of the population dataset."></p>
+<p>In the DataFrame, each row represents one game; however, as you can see by inspection, for each game there are two separate observations-one for each game. The only way to idientify who was the home team and who was the away team was by using the &lsquo;identifier&rsquo; column. If the identifier is &lsquo;vs&rsquo; then the team in the &rsquo;team&rsquo; column is the away team. If &lsquo;@&rsquo; then the team in the &rsquo;team&rsquo; column is the visiting team. In order to get the data in a way that I wanted I decided to split the DataFrame up by individual teams, which required that I make 33 separate DataFrames to calculate statistics on. Though inefficient, it was mostly a matter of copy-pasting code I had already written a bunch of times. In retrospect I might have written a function to avoid copy-pasting, but I had no idea the extent of what I was doing at the time.</p>
+<p>For each team&rsquo;s DataFrame, I calculated various rolling statistics based on their performance in past games. These statistics would be the basis of what I train my machine learning algorithms on, as it would be ludicrous to predict the outcome of each game based off of that game&rsquo;s own statistics. My accuracy would have 100% accuracy in that case (ha). Dry humor aside, I calculated rolling statistics for the following statistics:</p>
+<ul>
+<li>points</li>
+<li>goals</li>
+<li>goals against</li>
+<li>power play %</li>
+<li>penalty kill %</li>
+<li>shots on goal</li>
+<li>shots against</li>
+<li>faceoff win %</li>
+<li>save percentage</li>
+</ul>
+<p>I calculate the average of all of these statistics over three different periods of time: a short window, medium window, and a long window of time. For the machine learning models I decided to play around with how long to make each window of time. Below are the different combinations I use for my models:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center"><strong>Short |</strong></th>
+<th style="text-align:center"><strong>Medium |</strong></th>
+<th style="text-align:center"><strong>Long</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Games</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">18</td>
+<td style="text-align:center">30</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">5</td>
+<td style="text-align:center">10</td>
+<td style="text-align:center">30</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">15</td>
+<td style="text-align:center">25</td>
+<td style="text-align:center">40</td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align:center">20</td>
+<td style="text-align:center">40</td>
+<td style="text-align:center">60</td>
+</tr>
+</tbody>
+</table>
+<p>After having done this for each team, each DataFrame was concatenated into one larger DataFrame.</p>
+<p>But at this point you might be saying something along the lines of &ldquo;Colton, after doing this each game still has two columns that represent it. Why are you torturing us like this?!&rdquo;</p>
+<p>Why yes, that is quite a good point.</p>
+<p>To fix this, I split the DataFrame up <em>again</em> into home team and away team DataFrames. These two are them joined together based on the date an opponent. Finally, we have a DataFrame that</p>
+<p><strong>a)</strong> has the data we want</p>
+<p>and</p>
+<p><strong>b)</strong> has one row representing each game</p>
+<p>Before applying ML algorithms to the data, I wanted to make this project about trying to predict whether or not the home team was the winner in each game. To do this, I would need statistics comparing each rolling statistic of the home team to that of the away team. After standardizing the values and finding the differences between home and away team statistics I was set up to start throwing algorithms around.</p>
+<h2 id="applying-different-ml-algorithms">Applying Different ML Algorithms</h2>
+<p>Before applying different algorithms I initially set aside 30% of the data to be used as test data. The other 70% would be data used to train our models.</p>
+<p>I was able to randomly select games to use as test data since my models were only to be based on time-series data that was already accounted for in each instance of our DataFrame.</p>
+<h3 id="logistic-regression">Logistic Regression</h3>
+<p>Logistic regression is a good starting algorithm when deciding between two things. In this case we are going to be predicting whether the home team wins (1) or loses (0).</p>
+<p>The data was trained on the training data, and results based off of testing on the testing data is below.</p>
+<p>A sample confusion matrix is shown below along with the accuracy, precision, and recall for the statistics that were calculated off of the varying window time lengths discussed above.</p>
+<p><img src="https://www.cbarger.com/images/nhl_logistic_reg.png" alt="Initial DataFrame" title="Logistic Regression"></p>
+<table>
+<thead>
+<tr>
+<th>Time Windows |</th>
+<th style="text-align:center"><strong>Precision</strong></th>
+<th style="text-align:center"><strong>Accuracy</strong></th>
+<th style="text-align:center"><strong>Recall</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10, 18, 30</strong></td>
+<td style="text-align:center">.5687</td>
+<td style="text-align:center">.5694</td>
+<td style="text-align:center">.5656</td>
+</tr>
+<tr>
+<td><strong>5, 10, 30</strong></td>
+<td style="text-align:center">.5634</td>
+<td style="text-align:center">.5664</td>
+<td style="text-align:center">.4702</td>
+</tr>
+<tr>
+<td><strong>15, 25, 40</strong></td>
+<td style="text-align:center">.5739</td>
+<td style="text-align:center">.5677</td>
+<td style="text-align:center">.5034</td>
+</tr>
+<tr>
+<td><strong>20, 40, 60</strong></td>
+<td style="text-align:center">.5699</td>
+<td style="text-align:center">.5620</td>
+<td style="text-align:center">.5112</td>
+</tr>
+</tbody>
+</table>
+<p>From looking at the confusion matrix, the logistic regression algorithm is more effective at predicting the outcome of home losses (~60% eyeball accuracy) than home victories (~53% accuracy). From the precision statistic, the time windows (15, 25, 40) works best for use on the rolling statistics in our dataset. However the time windows (10, 18, 30) have the best overall performance in terms of performance statistics.</p>
+<p>What&rsquo;s great about the logistic regression model is that it&rsquo;s simple and easy to train, unlike more complex ML models. Let&rsquo;s take a look at a couple others.</p>
+<h3 id="random-forest-classifier">Random Forest Classifier</h3>
+<p>Shown below are the results of a random forest regressor trained on the training set. The max tree depth was set to 5 and the number of estimators was set to 200. For better results using random forests, I might consider using a grid search to look for optimal parameters in the future. But for now, I am not too worried. Future improvement will be more dependent on the quality of data in my opinion.</p>
+<p><img src="https://www.cbarger.com/images/nhl_random_forest.png" alt="Initial DataFrame" title="Random Forest Classifier"></p>
+<table>
+<thead>
+<tr>
+<th>Time Windows |</th>
+<th style="text-align:center"><strong>Precision</strong></th>
+<th style="text-align:center"><strong>Accuracy</strong></th>
+<th style="text-align:center"><strong>Recall</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10, 18, 30</strong></td>
+<td style="text-align:center">.5656</td>
+<td style="text-align:center">.5631</td>
+<td style="text-align:center">.5118</td>
+</tr>
+<tr>
+<td><strong>5, 10, 30</strong></td>
+<td style="text-align:center">.5594</td>
+<td style="text-align:center">.5597</td>
+<td style="text-align:center">.4794</td>
+</tr>
+<tr>
+<td><strong>15, 25, 40</strong></td>
+<td style="text-align:center">.5735</td>
+<td style="text-align:center">.5657</td>
+<td style="text-align:center">.5137</td>
+</tr>
+<tr>
+<td><strong>20, 40, 60</strong></td>
+<td style="text-align:center">.5668</td>
+<td style="text-align:center">.5569</td>
+<td style="text-align:center">.5208</td>
+</tr>
+</tbody>
+</table>
+<p>The confusion matrix for the random forest classifier has a different look than the one generated by logistic regression. Again, our model performs fairly well when predicting home losses. However we only have slightly above 50% accuracy in predicting home team victories. This continues the trend of models performing worse at predicting home wins than home losses.</p>
+<p>Like the previous model our model has the highest precision when using the rolling statistics based on the (15, 25, 40) time windows.</p>
+<h3 id="linear-svm">Linear SVM</h3>
+<p>The final algorithm I decided to test out was a Linear SVM classifier. Shown below are the results from the test set.</p>
+<p><img src="https://www.cbarger.com/images/nhl_linear_svm.png" alt="Initial DataFrame" title="Linear SVM Classifier"></p>
+<table>
+<thead>
+<tr>
+<th>Time Windows |</th>
+<th style="text-align:center"><strong>Precision</strong></th>
+<th style="text-align:center"><strong>Accuracy</strong></th>
+<th style="text-align:center"><strong>Recall</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>10, 18, 30</strong></td>
+<td style="text-align:center">.5656</td>
+<td style="text-align:center">.5725</td>
+<td style="text-align:center">.4527</td>
+</tr>
+<tr>
+<td><strong>5, 10, 30</strong></td>
+<td style="text-align:center">.5638</td>
+<td style="text-align:center">.5766</td>
+<td style="text-align:center">.4178</td>
+</tr>
+<tr>
+<td><strong>15, 25, 40</strong></td>
+<td style="text-align:center">.5708</td>
+<td style="text-align:center">.5602</td>
+<td style="text-align:center">.4671</td>
+</tr>
+<tr>
+<td><strong>20, 40, 60</strong></td>
+<td style="text-align:center">.5710</td>
+<td style="text-align:center">.5684</td>
+<td style="text-align:center">.4783</td>
+</tr>
+</tbody>
+</table>
+<p>Funny enough, we get the same exact plot for the confusion matrix as we did for the logistic regression. This model performs well on the true home losses and poorly on the true home wins. The highest precision was achieved using the (20, 40, 60) window time frames, just barely edging out the winner from the other two algorithms, the (15, 25, 40) rolling statistic time frame.</p>
+<h2 id="conclusions">Conclusions</h2>
+<p>I tested out some basic ML algorithms on nearly 17,000 NHL games played between 2005 and 2022. I achieved a peak accuracy of 57.39% using a logistic regression model with a rolling statistic timeframe of 15 games, 25 games, and 40 games to compare stats between two opposing teams.</p>
+<p>The models tend to perform stronger when trying to predict true home losses rather than true wins by home teams. Further exploration into the data and the engineering of features will have to be done to figure out exactly why this is the case.</p>
+<p>Everything I use here is available at the GitHub repository <a href="https://github.com/cbarger233/NHL-Scores-Predictions" title="General Kenobi">here</a>.</p>
 <ul class="pa0">
   
 </ul>
