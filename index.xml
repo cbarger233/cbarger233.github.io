@@ -6,11 +6,11 @@
     <description>Recent content in Colton Barger on Colton</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 May 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://www.cbarger.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 06 Jun 2022 10:58:08 -0400</lastBuildDate><atom:link href="https://www.cbarger.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult</title>
       <link>https://www.cbarger.com/projects/nhl-predictions/</link>
-      <pubDate>Mon, 16 May 2022 10:58:08 -0400</pubDate>
+      <pubDate>Mon, 06 Jun 2022 10:58:08 -0400</pubDate>
       
       <guid>https://www.cbarger.com/projects/nhl-predictions/</guid>
       <description>Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from nhl.com using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&amp;rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&amp;rsquo;s same stats for each game.</description>
