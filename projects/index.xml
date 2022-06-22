@@ -8,7 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://www.cbarger.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Trying to Predict NHL Game Outcomes with ML and Why It&#39;s Difficult</title>
+      <title>Visualizing NHL Shot Data With a Streamlit Web App</title>
+      <link>https://www.cbarger.com/projects/nhl-web-app/</link>
+      <pubDate>Tue, 21 Jun 2022 10:58:08 -0400</pubDate>
+      
+      <guid>https://www.cbarger.com/projects/nhl-web-app/</guid>
+      <description>Overview The web application can be viewed here and the Github repository for this project can be seen here.
+In this application, I take data that I obtained from Kaggle user Martin Ellis at this link and visualize shots made by 30 players from around the league. I narrowed the dataset down to the 30 players with the most shots due to the files being too large if every NHL player was included.</description>
+    </item>
+    
+    <item>
+      <title>Predicting NHL Game Outcomes with ML and Why It&#39;s Difficult</title>
       <link>https://www.cbarger.com/projects/nhl-predictions/</link>
       <pubDate>Mon, 06 Jun 2022 10:58:08 -0400</pubDate>
       
@@ -17,7 +27,7 @@
     </item>
     
     <item>
-      <title>ARIMA models for Time Series Analysis and Forecasting</title>
+      <title>Time Series Analysis and Forecasting with ARIMA</title>
       <link>https://www.cbarger.com/projects/arima_modeling/</link>
       <pubDate>Mon, 18 Apr 2022 10:58:08 -0400</pubDate>
       
@@ -38,7 +48,7 @@ What is ARIMA, Exactly? ARIMA is an acronym describing a method of combined stat
     </item>
     
     <item>
-      <title>Markov Chains and Chutes &amp; Ladders in R</title>
+      <title>An Analysis of Chutes &amp; Ladders Using Markov Chains</title>
       <link>https://www.cbarger.com/projects/chutes-and-ladders/</link>
       <pubDate>Mon, 21 Mar 2022 10:58:08 -0400</pubDate>
       

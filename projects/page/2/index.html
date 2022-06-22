@@ -162,104 +162,12 @@
   <div class="bg-white mb3 pa4 gray overflow-hidden">
     <span class="f6 db">Projects</span>
     <h1 class="f3 near-black">
-      <a href="https://www.cbarger.com/projects/nhl-web-app/" class="link black dim">
-        Visualizing NHL Shot Data With a Streamlit Web App
+      <a href="https://www.cbarger.com/projects/rotten-tomatoes-sentiment/" class="link black dim">
+        Rotten Tomatoes Reviews NLP and Sentiment Analysis Using LSTM
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Overview The web application can be viewed here and the Github repository for this project can be seen here.
-In this application, I take data that I obtained from Kaggle user Martin Ellis at this link and visualize shots made by 30 players from around the league. I narrowed the dataset down to the 30 players with the most shots due to the files being too large if every NHL player was included.
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Projects</span>
-    <h1 class="f3 near-black">
-      <a href="https://www.cbarger.com/projects/nhl-predictions/" class="link black dim">
-        Predicting NHL Game Outcomes with ML and Why It&#39;s Difficult
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Here I collect data from 17 NHL seasons beginning with the 2005-2006 season and ending with the 2021-2022 season. I extract the data directly from nhl.com using web scraping techniques (although there are a ton of better sites to get game data from). I clean the data and extract features from each team&rsquo;s individual performance. I calculate a rolling average/summary of multiple statistics for a few different timeframes and compare those to their opponent&rsquo;s same stats for each game.
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Projects</span>
-    <h1 class="f3 near-black">
-      <a href="https://www.cbarger.com/projects/arima_modeling/" class="link black dim">
-        Time Series Analysis and Forecasting with ARIMA
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Summary ARIMA models are time series models often used in economics and finance to forecast the future. Here I talk a bit about ARIMA models in general and present an example of forecasting future populations gains of the US using ARIMA in Python.
-The Jupyter notebook in which I perform the following analyses can be found on my GitHub here.
-What is ARIMA, Exactly? ARIMA is an acronym describing a method of combined statistical techniques to model and predict time series data.
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Projects</span>
-    <h1 class="f3 near-black">
-      <a href="https://www.cbarger.com/projects/chess-game-analysis/" class="link black dim">
-        Analysis of a Chess Games Dataset
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Summary I perform an exploratory data analysis of a dataset made up of chess games played on Lichess found here. There are over 20,000 games from 12,000+ players on lichess.org found in the dataset with which I try to answer questions such as
- How big of an advantage do players with the white pieces have, if any? How does rating affect the outcome of a game? Are there any players in the dataset with a suspiciously high winning rate?
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Projects</span>
-    <h1 class="f3 near-black">
-      <a href="https://www.cbarger.com/projects/chutes-and-ladders/" class="link black dim">
-        An Analysis of Chutes &amp; Ladders Using Markov Chains
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Introduction Chutes &amp; Ladders, or Eels &amp; Escalators for any Spongebob Squarepants fans like myself out there, is a game all about luck. The goal is to get to exactly the end of the 100-tile board by rolling a six-sided die. No over-shooting. If you happen to land at the base of a ladder, you may move up to the top of the ladder. If you are unfortunate enough to land on top of a slide, you go all the way to the bottom of the slide.
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Projects</span>
-    <h1 class="f3 near-black">
-      <a href="https://www.cbarger.com/projects/g2g-scraping/" class="link black dim">
-        Scraping Lost Ark Gold Prices off of g2g.com
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Summary In this project I develop a web scraper using python, selenium, and BeautifulSoup4 to collect data on gold prices for the MMORPG Lost Ark and display it in an online dashboard. The dashboard is compiled using plotly and dash, and then deployed to Heroku.
-GitHub Repository For This Project
-View the Dashboard For This Project
-Features  Scrapes paginated data across 62 servers and 5 regions Displays the time series of gold prices in an interactive graph using dropdown bars Displays the time series of gold prices for every gold seller of Lost Ark  
+      Summary In this project I scrape movie reviews for the top 100 movies between 2000 and 2021 from Rotten Tomatoes (with the addition of Interstellar (2014)). After scraping the reviews, I apply Natural Language Processing (NLP) on the reviews dataset before training a Long Short Term Memory (LSTM) Recurrent Neural Network (RNN) to attempt to perform sentiment analysis on further reviews. The model accurately predicted positive.negative reviews with 89% accuracy after all was said and done.
     </div>
   </div>
 </div>
@@ -268,23 +176,23 @@ Features  Scrapes paginated data across 62 servers and 5 regions Displays the ti
       
     </section>
     <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
+      <li class="page-item">
+        <a href="https://www.cbarger.com/projects/" aria-label="First" class="page-link" role="button"><span aria-hidden="true">&laquo;&laquo;</span></a>
       </li>
-      <li class="page-item disabled">
-        <a aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
+      <li class="page-item">
+        <a href="https://www.cbarger.com/projects/" aria-label="Previous" class="page-link" role="button"><span aria-hidden="true">&laquo;</span></a>
+      </li>
+      <li class="page-item">
+        <a href="https://www.cbarger.com/projects/" aria-label="Page 1" class="page-link" role="button">1</a>
       </li>
       <li class="page-item active">
-        <a aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
+        <a aria-current="page" aria-label="Page 2" class="page-link" role="button">2</a>
       </li>
-      <li class="page-item">
-        <a href="https://www.cbarger.com/projects/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Next" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;</span></a>
       </li>
-      <li class="page-item">
-        <a href="https://www.cbarger.com/projects/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="https://www.cbarger.com/projects/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
+      <li class="page-item disabled">
+        <a aria-disabled="true" aria-label="Last" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&raquo;&raquo;</span></a>
       </li>
     </ul></article>
 
