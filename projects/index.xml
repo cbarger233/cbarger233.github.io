@@ -8,13 +8,23 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Mar 2017 12:00:00 -0500</lastBuildDate><atom:link href="https://www.cbarger.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>The Best Online Streaming Services, According to Audience Reviews</title>
+      <link>https://www.cbarger.com/projects/streaming-services-comparison/</link>
+      <pubDate>Tue, 02 Aug 2022 11:13:32 -0400</pubDate>
+      
+      <guid>https://www.cbarger.com/projects/streaming-services-comparison/</guid>
+      <description>Introduction Long gone are the days when families boasted about cancelling their cable subscriptions in favor of Netflix. In April 2013 a standard Netflix subscription only cost $7.99 (USD). Nowadays, a standard subscription will fetch $15.49.
+There are many reasons for the price hike throughout the years, which can be visualized through January 2022 here. Since 2013 there has been inflation, costs of funding numerous Netflix original series, and increasing competition for online streaming.</description>
+    </item>
+    
+    <item>
       <title>Visualizing NHL Shot Data With a Streamlit Web App</title>
       <link>https://www.cbarger.com/projects/nhl-web-app/</link>
       <pubDate>Tue, 21 Jun 2022 10:58:08 -0400</pubDate>
       
       <guid>https://www.cbarger.com/projects/nhl-web-app/</guid>
       <description>Overview The web application can be viewed here and the Github repository for this project can be seen here.
-In this application, I take data that I obtained from Kaggle user Martin Ellis at this link and visualize shots made by 30 players from around the league. I narrowed the dataset down to the 30 players with the most shots due to the files being too large if every NHL player was included.</description>
+In this application, I take data that I obtained from Kaggle user Martin Ellis at this link and visualize shots made by 30 players from around the league. I narrowed the dataset down to the 171 players with the most shots due to the files being too large if every NHL player was included.</description>
     </item>
     
     <item>
